@@ -100,9 +100,6 @@ hr.separator.separator-white {
     margin: 0;
 }
 
-
-
-
 /*---------- NAVIGATION BAR ----------*/
 nav.navbar {
     border: none;
@@ -130,7 +127,7 @@ nav.navbar ul.ul-h.nav-menu {
     display: inline-block;
 }
 nav.navbar ul.ul-h.nav-menu > li {
-    padding: 0 22px;
+    padding: 0 14px;
 }
 nav.navbar .container.fluid-container {
     position: relative;
@@ -187,10 +184,8 @@ nav.navbar .container.fluid-container .hero-logo-right {
     transform: translateY(-50%);
     text-align: right;
 }
-
-/*-- Transparent White Navigation Bar --*/
 nav.navbar.transparent-white {
-    background-color: #fff;
+    background-color: #F5F5F5;
     position: absolute;
     border-top:1px solid #d1d1d1;
     bottom: 0;
@@ -203,8 +198,9 @@ nav.navbar.transparent-white.navbar-static {
 }
 nav.navbar.transparent-white ul.ul-h.nav-menu > li > a {
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
     letter-spacing: 1px;
-    color: #4e4e4e;
+    color: #95A5A6;
     -webkit-transition: color .2s;
     transition: color .2s;
 }
@@ -221,218 +217,7 @@ nav.navbar.transparent-white ul.ul-h.nav-menu > li > a:hover {
 nav.navbar.transparent-white .logo-black {
     display: none;
 }
-/*- Collapsed -*/
-@media (min-width: 1351px) {
-    nav.navbar.transparent-white.nav-collapsed {
-        position: fixed;
-        height: 70px;
-        background-color: #fff;
-        border-bottom: 1px solid rgba(0, 0, 0, .07);
-    }
-    nav.navbar.transparent-white.nav-collapsed ul.ul-h.nav-menu > li > a {
-        letter-spacing: .5px;
-        font-weight: 600;
-        color: rgba(0, 0, 0, .85);
-    }
-    nav.navbar.transparent-white.nav-collapsed ul.ul-h.nav-menu.nav-social li a i {
-        font-size: 11px;
-        padding-right: 5px;
-        margin-right: 5px;
-        border-right: 1px solid rgba(0, 0, 0, .2);
-    }
-    nav.navbar.transparent-white.nav-collapsed ul.ul-h.nav-menu > li > a:hover {
-        color: rgba(0, 0, 0, .6);
-    }
-    nav.navbar.transparent-white.nav-collapsed .logo-white {
-        display: none;
-    }
-    nav.navbar.transparent-white.nav-collapsed .logo-black {
-        display: initial;
-    }
-}
-/*-- Transparent Black Navigation Bar --*/
-nav.navbar.transparent-black {
-    background-color: transparent;
-    position: absolute;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-}
-nav.navbar.transparent-black.navbar-fixed {
-    position: fixed;
-}
-nav.navbar.transparent-black.navbar-static {
-    position: static;
-}
-nav.navbar.transparent-black ul.ul-h.nav-menu > li > a {
-    font: 600 10px/1 'Montserrat', sans-serif;
-    letter-spacing: .5px;
-    color: rgba(0, 0, 0, .85);
-    text-transform: uppercase;
-    -webkit-transition: color .2s;
-    transition: color .2s;
-}
-nav.navbar.transparent-black ul.ul-h.nav-menu.nav-social li a i {
-    font-size: 11px;
-    padding-right: 5px;
-    margin-right: 5px;
-    border-right: 1px solid rgba(0, 0, 0, .2);
-}
-nav.navbar.transparent-black ul.ul-h.nav-menu > li > a:hover {
-    color: rgba(0, 0, 0, .6);
-}
-nav.navbar.transparent-black .logo-white {
-    display: none;
-}
-/*- Collapsed -*/
-@media (min-width: 1351px) {
-    nav.navbar.transparent-black.nav-collapsed {
-        position: fixed;
-        height: 70px;
-        background-color: #fff;
-        border-bottom: 1px solid rgba(0, 0, 0, .07);
-    }
-    nav.navbar.transparent-black.nav-collapsed ul.ul-h.nav-menu > li > a {
-        letter-spacing: .5px;
-        font-weight: 600;
-        color: rgba(0, 0, 0, .85);
-    }
-    nav.navbar.transparent-black.nav-collapsed ul.ul-h.nav-menu.nav-social li a i {
-        font-size: 11px;
-        padding-right: 5px;
-        margin-right: 5px;
-        border-right: 1px solid rgba(0, 0, 0, .2);
-    }
-    nav.navbar.transparent-black.nav-collapsed ul.ul-h.nav-menu > li > a:hover {
-        color: rgba(0, 0, 0, .6);
-    }
-    nav.navbar.transparent-black.nav-collapsed .logo-white {
-        display: none;
-    }
-    nav.navbar.transparent-black.nav-collapsed .logo-black {
-        display: initial;
-    }
-}
-/*-- White Navigation Bar --*/
-nav.navbar.navbar-white {
-    background-color: #fff;
-    position: absolute;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-}
-nav.navbar.navbar-white.navbar-fixed {
-    position: fixed;
-}
-nav.navbar.navbar-white.navbar-static {
-    position: static;
-}
-nav.navbar.navbar-white ul.ul-h.nav-menu > li > a {
-    font: 600 10px/1 'Montserrat', sans-serif;
-    letter-spacing: .5px;
-    color: rgba(0, 0, 0, .85);
-    text-transform: uppercase;
-    -webkit-transition: color .2s;
-    transition: color .2s;
-}
-nav.navbar.navbar-white ul.ul-h.nav-menu.nav-social li a i {
-    font-size: 11px;
-    padding-right: 5px;
-    margin-right: 5px;
-    border-right: 1px solid rgba(0, 0, 0, .2);
-}
-nav.navbar.navbar-white ul.ul-h.nav-menu > li > a:hover {
-    color: rgba(0, 0, 0, .6);
-}
-nav.navbar.navbar-white .logo-white {
-    display: none;
-}
-/*- Collapsed -*/
-@media (min-width: 1351px) {
-    nav.navbar.navbar-white.nav-collapsed {
-        position: fixed;
-        height: 70px;
-        background-color: #fff;
-        border-bottom: 1px solid rgba(0, 0, 0, .07);
-    }
-    nav.navbar.navbar-white.nav-collapsed ul.ul-h.nav-menu > li > a {
-        letter-spacing: .5px;
-        font-weight: 600;
-        color: rgba(0, 0, 0, .85);
-    }
-    nav.navbar.navbar-white.nav-collapsed ul.ul-h.nav-menu.nav-social li a i {
-        font-size: 11px;
-        padding-right: 5px;
-        margin-right: 5px;
-        border-right: 1px solid rgba(0, 0, 0, .2);
-    }
-    nav.navbar.navbar-white.nav-collapsed ul.ul-h.nav-menu > li > a:hover {
-        color: rgba(0, 0, 0, .6);
-    }
-    nav.navbar.navbar-white.nav-collapsed .logo-white {
-        display: none;
-    }
-    nav.navbar.navbar-white.nav-collapsed .logo-black {
-        display: initial;
-    }
-}
-/*-- Black Navigation Bar --*/
-nav.navbar.navbar-black {
-    background-color: #000;
-    position: absolute;
-    border-bottom: 1px solid rgba(255, 255, 255, .1);
-}
-nav.navbar.navbar-black.navbar-fixed {
-    position: fixed;
-}
-nav.navbar.navbar-black.navbar-static {
-    position: static;
-}
-nav.navbar.navbar-black ul.ul-h.nav-menu > li > a {
-    font: 500 10px/1 'Montserrat', sans-serif;
-    letter-spacing: 1px;
-    color: rgba(255, 255, 255, 1);
-    text-transform: uppercase;
-    -webkit-transition: color .2s;
-    transition: color .2s;
-}
-nav.navbar.navbar-black ul.ul-h.nav-menu.nav-social li a i {
-    font-size: 11px;
-    padding-right: 5px;
-    margin-right: 5px;
-    border-right: 1px solid rgba(255, 255, 255, .3);
-}
-nav.navbar.navbar-black ul.ul-h.nav-menu > li > a:hover {
-    color: rgba(255, 255, 255, .6);
-}
-nav.navbar.navbar-black .logo-black {
-    display: none;
-}
-/*- Collapsed -*/
-@media (min-width: 1351px) {
-    nav.navbar.navbar-black.nav-collapsed {
-        position: fixed;
-        height: 70px;
-        background-color: #000;
-        border-bottom: 1px solid rgba(255, 255, 255, .1);
-    }
-    nav.navbar.navbar-black.nav-collapsed ul.ul-h.nav-menu > li > a {
-        letter-spacing: 1px;
-        font-weight: 500;
-        color: rgba(255, 255, 255, 1);
-    }
-    nav.navbar.navbar-black.nav-collapsed ul.ul-h.nav-menu.nav-social li a i {
-        font-size: 11px;
-        padding-right: 5px;
-        margin-right: 5px;
-        border-right: 1px solid rgba(255, 255, 255, .3);
-    }
-    nav.navbar.navbar-black.nav-collapsed ul.ul-h.nav-menu > li > a:hover {
-        color: rgba(255, 255, 255, .6);
-    }
-    nav.navbar.navbar-black.nav-collapsed .logo-black {
-        display: none;
-    }
-    nav.navbar.navbar-black.nav-collapsed .logo-white {
-        display: initial;
-    }
-}
+
 .gitter-logo{
   float: left;
 }
@@ -445,12 +230,19 @@ nav.navbar.navbar-black .logo-black {
 }
 .nav-menu-center{
   margin:0px auto !important;
-  background: #f5f5f5;
   border-radius: 200px;
   padding-left: 15px;
   padding-right: 15px;
   height: 60% !important;
   margin-top: 15px !important;
+}
+.nav-menu-center li a{
+  font-weight: 700 !important;
+  color: #252525 !important;
+  font-size: 15px;
+}
+.nav-menu-center li{
+  padding: 0 22px !important;
 }
 span.gitter{
   display: block;
@@ -672,7 +464,6 @@ span.gitter{
   z-index: 1;
   background-color: #F5F5F5;
   background-repeat: no-repeat;
-  opacity: 0.7 !important;
 }
 .background-image img {
     display: none
