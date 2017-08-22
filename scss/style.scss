@@ -248,6 +248,9 @@ span.gitter{
   display: block;
 }
 @media (min-width: 1200px) and (max-width: 1280px){
+  .hero-content p{
+  	font-size: 18px !important;
+  }
   .container {
       width: 1280px !important;
   }
@@ -270,6 +273,9 @@ span.gitter{
   }
 }
 @media (min-width: 1000px) and (max-width: 1024px){
+  .hero-content p{
+  	font-size: 18px !important;
+  }
   .container {
       width: 1024px !important;
   }
@@ -292,6 +298,9 @@ span.gitter{
   }
 }
 @media (min-width: 760px) and (max-width: 768px){
+  .hero-content p{
+  	font-size: 18px !important;
+  }
   .container {
       width: 100% !important;
   }
@@ -331,6 +340,9 @@ span.gitter{
   }
 }
 @media (max-width: 640px){
+  .hero-content p{
+  	font-size: 18px !important;
+  }
   .container {
       width: 100% !important;
   }
@@ -369,6 +381,9 @@ span.gitter{
   }
 }
 @media (max-width: 480px){
+  .hero-content p{
+  	font-size: 18px !important;
+  }
   .container {
       width: 100% !important;
   }
@@ -401,6 +416,9 @@ span.gitter{
   }
 }
 @media (min-width: 320px) and (max-width: 330px){
+  .hero-content p{
+  	font-size: 16px !important;
+  }
   .container {
       width: 100% !important;
   }
@@ -530,7 +548,7 @@ span.gitter{
 }
 .hero-content p{
 	font-family: Ubuntu;
-	font-size: 18px;
+	font-size: 20px;
   font-weight: 300;
 	line-height: 1.8;
 	letter-spacing: 0.2px;
