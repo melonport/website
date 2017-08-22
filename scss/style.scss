@@ -248,6 +248,9 @@ span.gitter{
   display: block;
 }
 @media (min-width: 1200px) and (max-width: 1280px){
+  .hero-content p{
+  	font-size: 18px !important;
+  }
   .container {
       width: 1280px !important;
   }
@@ -270,6 +273,9 @@ span.gitter{
   }
 }
 @media (min-width: 1000px) and (max-width: 1024px){
+  .hero-content p{
+  	font-size: 18px !important;
+  }
   .container {
       width: 1024px !important;
   }
@@ -292,6 +298,9 @@ span.gitter{
   }
 }
 @media (min-width: 760px) and (max-width: 768px){
+  .hero-content p{
+  	font-size: 18px !important;
+  }
   .container {
       width: 100% !important;
   }
@@ -331,6 +340,9 @@ span.gitter{
   }
 }
 @media (max-width: 640px){
+  .hero-content p{
+  	font-size: 18px !important;
+  }
   .container {
       width: 100% !important;
   }
@@ -358,7 +370,6 @@ span.gitter{
   .nav-menu-center{
     padding-top: 15px !important;
     padding-bottom: 15px !important;
-    margin-top: 25px !important;
   }
   .navbar{
     min-height: 85px;
@@ -369,11 +380,14 @@ span.gitter{
   }
 }
 @media (max-width: 480px){
+  .hero-content p{
+  	font-size: 18px !important;
+  }
   .container {
       width: 100% !important;
   }
   nav.navbar .container.fluid-container ul.ul-h.nav-menu.nav-menu-right{
-    padding-top: 30px !important;
+    padding-top: 15px !important;
     padding-bottom: 20px !important;
     text-align: center;
     display: table;
@@ -384,14 +398,14 @@ span.gitter{
     margin-top: 10px;
   }
   nav.navbar .container.fluid-container ul.ul-h.nav-menu.nav-menu-left{
-    padding-top: 30px;
+    padding-top: 20px;
     text-align: center;
     display: table;
     margin:0px auto;
     float: none !important;
   }
   .hero-fullscreen{
-    height: 70vh !important;
+    height: 71vh !important;
   }
   nav.navbar ul.ul-h.nav-menu>li{
     padding: 0 3px !important;
@@ -401,11 +415,14 @@ span.gitter{
   }
 }
 @media (min-width: 320px) and (max-width: 330px){
+  .hero-content p{
+  	font-size: 16px !important;
+  }
   .container {
       width: 100% !important;
   }
   nav.navbar .container.fluid-container ul.ul-h.nav-menu.nav-menu-right{
-    padding-top: 20px !important;
+    padding-top: 15px !important;
     padding-bottom: 20px !important;
     text-align: center;
     display: table;
@@ -530,7 +547,7 @@ span.gitter{
 }
 .hero-content p{
 	font-family: Ubuntu;
-	font-size: 18px;
+	font-size: 20px;
   font-weight: 300;
 	line-height: 1.8;
 	letter-spacing: 0.2px;
