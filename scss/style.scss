@@ -293,7 +293,7 @@ span.gitter{
 }
 @media (min-width: 760px) and (max-width: 768px){
   .container {
-      width: 768px !important;
+      width: 100% !important;
   }
   nav.navbar .container.fluid-container ul.ul-h.nav-menu.nav-menu-right{
     padding-top: 30px !important;
@@ -305,7 +305,6 @@ span.gitter{
     padding-left: 0;
   }
   nav.navbar .container.fluid-container ul.ul-h.nav-menu.nav-menu-right>li{
-    display: block !important;
     margin-top: 10px;
   }
   nav.navbar .container.fluid-container ul.ul-h.nav-menu.nav-menu-left{
@@ -333,19 +332,17 @@ span.gitter{
 }
 @media (max-width: 640px){
   .container {
-      width: 640px !important;
+      width: 100% !important;
   }
   nav.navbar .container.fluid-container ul.ul-h.nav-menu.nav-menu-right{
     padding-top: 30px !important;
     padding-bottom: 20px !important;
     text-align: center;
     display: table;
-    margin:0px auto;
     float: none !important;
     padding-left: 0;
   }
   nav.navbar .container.fluid-container ul.ul-h.nav-menu.nav-menu-right>li{
-    display: block !important;
     margin-top: 10px;
   }
   nav.navbar .container.fluid-container ul.ul-h.nav-menu.nav-menu-left{
@@ -356,7 +353,7 @@ span.gitter{
     float: none !important;
   }
   .hero-fullscreen{
-    height: 65vh !important;
+    height: 70vh !important;
   }
   .nav-menu-center{
     padding-top: 15px !important;
@@ -368,12 +365,12 @@ span.gitter{
     margin-bottom: 0 !important;
   }
   nav.navbar ul.ul-h.nav-menu>li{
-    padding: 0 22px !important;
+    padding: 0 15px !important;
   }
 }
 @media (max-width: 480px){
   .container {
-      width: 480px !important;
+      width: 100% !important;
   }
   nav.navbar .container.fluid-container ul.ul-h.nav-menu.nav-menu-right{
     padding-top: 30px !important;
@@ -384,7 +381,6 @@ span.gitter{
     float: none !important;
   }
   nav.navbar .container.fluid-container ul.ul-h.nav-menu.nav-menu-right>li{
-    display: block !important;
     margin-top: 10px;
   }
   nav.navbar .container.fluid-container ul.ul-h.nav-menu.nav-menu-left{
@@ -395,10 +391,53 @@ span.gitter{
     float: none !important;
   }
   .hero-fullscreen{
-    height: 56vh !important;
+    height: 70vh !important;
   }
   nav.navbar ul.ul-h.nav-menu>li{
-    padding: 0 15px !important;
+    padding: 0 3px !important;
+  }
+  .menu-bottom{
+    padding-left: 0px !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 330px){
+  .container {
+      width: 100% !important;
+  }
+  nav.navbar .container.fluid-container ul.ul-h.nav-menu.nav-menu-right{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    text-align: center;
+    display: table;
+    margin:0px auto;
+    float: none !important;
+  }
+  nav.navbar .container.fluid-container ul.ul-h.nav-menu.nav-menu-right>li{
+    margin-top: 10px;
+  }
+  nav.navbar .container.fluid-container ul.ul-h.nav-menu.nav-menu-left{
+    padding-top: 20px;
+    text-align: center;
+    display: table;
+    margin:0px auto;
+    float: none !important;
+  }
+  .hero-fullscreen{
+    height: 73vh !important;
+  }
+  nav.navbar ul.ul-h.nav-menu>li{
+    padding: 0 1px !important;
+  }
+  .nav-menu-center {
+    padding-top: 15px !important;
+    padding-bottom: 0px !important;
+    margin-top: 0px !important;
+  }
+  .menu-bottom{
+    padding-left: 0px !important;
+  }
+  .container{
+    padding-left: 3px;
   }
 }
 
