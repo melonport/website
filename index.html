@@ -1,92 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Melonport | Blockchain Software for Asset Management</title>
-        <link href="img/favicon.png" rel="icon" type="image/png">
-        <link href="css/plugins.min.css" rel="stylesheet" type="text/css">
-        <link href="css/style.min.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-        <link href="fonts/flaticon/flaticon.css" rel="stylesheet" type="text/css">
-        <!-- Open Graph -->
-        <meta property="og:url"                content="http://melonport.com/" />
-        <meta property="og:title"              content="Melonport | Blockchain Software for Asset Management" />
-        <meta property="og:description"        content="Melonport is the private company building the open-source Melon Protocol. The Melon protocol is a blockchain protocol for digital asset management initially built on the Ethereum platform." />
-        <meta property="og:image"              content="https://github.com/melonport/website/blob/master/img/melonport_OG.jpg" />
-        <!-- analytics -->
-        <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Melonport | Blockchain Software for Asset Management</title>
+    <link href="assets/favicon.png" rel="icon" type="image/png">
 
-        ga('create', 'UA-80990528-1', 'auto');
-        ga('send', 'pageview');
-        </script>
-    </head>
-    <body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.min.css">
 
-        <!-- MAIN CONTENT / HERO -->
-        <section id="hero" class="hero-fullscreen bg-white">
-            <div class="background-image">
-              <img src="img/logo-bg-2.png" alt="#">
+    <!-- Ubuntu Font -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+
+    <!-- Open Graph -->
+    <meta property="og:url"                content="http://melonport.com/" />
+    <meta property="og:title"              content="Melonport | Blockchain Software for Asset Management" />
+    <meta property="og:description"        content="Melonport is the private company building the open-source Melon Protocol. The Melon protocol is a blockchain protocol for digital asset management initially built on the Ethereum platform." />
+    <meta property="og:image"              content="https://github.com/melonport/website/blob/master/img/melonport_OG.jpg" />
+
+    <!-- analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-80990528-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bb-light melon-nav">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/melonport_logo.svg" width="40" height="40" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item nav-text">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#MelonModal">MELON</a>
+            </li>
+            <li class="nav-item nav-text">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#M0Modal">M-0</a>
+            </li>
+            <li class="nav-item nav-text">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#OyenteModal">OYENTE</a>
+            </li>
+            <li class="nav-item nav-text">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#TeamModal">TEAM</a>
+            </li>
+            <li class="nav-item nav-text">
+              <a class="nav-link" href="https://medium.com/@melonproject" target="_blank">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:team@melonport.com?Subject=Hello%20Melonport" target="_top" title="e-mail us">
+                <div class="mail-icon">
+                  <img src="assets/envelope.png" width="22" />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <section id="hero" class="hero-fullscreen bg-white">
+      <div class="background-image">
+        <img src="assets/logo-bg-2.png" alt="#">
+      </div>
+      <div class="hero-content">
+        <div class="container width-size">
+          <div class="col-md-7 col-sm-8 col-xs-10 m-auto white">
+            <p class="company-name">Melonport AG</p>
+            <p class="company-slogan">Technology Regulated Funds</p>
+          </div>
+          <div class="col-md-5 col-sm-8 col-xs-10 m-auto activity">
+            <div class="latest-commit">
+              <div class="latest-icon"><svg class="icon" width="14" height="15"><use xlink:href="#hashtag-symbol" /></svg></div>
+              <div class="detail"><span class="light">Latest Commit:</span> <span class="bold">2a5c2ed</span></div>
             </div>
-            <div class="hero-content">
-              <div class="container pl5p pr5p width-size">
-                <div class="col-md-5 col-sm-8 col-xs-10 m-auto white">
-                  <p>Melonport AG was created to develop Melon.
-                  <br><br>Melon ([méllō], μέλλω; Greek for "destined to be") is blockchain software that seeks to enable participants to set up, manage and invest in technology regulated digital asset funds.</p>
+            <div class="commits">
+              <div class="latest-icon"><svg class="icon" width="17" height="18"><use xlink:href="#clock-1" /></svg></div>
+              <div class="detail"><span class="light">Commits 24h:</span> <span class="bold">182</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="fixed-bottom bg-light melon-foot">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="melon-chat">
+              <a href="https://gitter.im/melonproject/general" target="_blank">
+                <div class="gitter-logo">
+                  <img src="assets/gitter-logo.png">
+                </div>
+                <div class="gitter-text">
+                  <span class="gitter">Join Us</span>
+                  <span class="gitter">on <span class="gitter-text-bold">GITTER</span></span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col">
+            <ul class="melon-social">
+              <li><a href="https://twitter.com/melonport" target="_blank"><svg class="icon" width="35" height="35"><use xlink:href="#twitter" /></svg></a></li>
+              <li><a href="https://github.com/melonproject" target="_blank"><svg class="icon" width="35" height="35"><use xlink:href="#github-logo" /></svg></a></li>
+              <li><a href="https://www.linkedin.com/company/10700416/" target="_blank"><svg class="icon" width="35" height="35"><use xlink:href="#linkedin-logo-button" /></svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Melon Modal -->
+    <div class="modal fade" id="MelonModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog melon-modal" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">&nbsp;</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <svg class="icon" width="20" height="20"><use xlink:href="#close" /></svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <section id="hero" class="modal-content-body bg-white">
+              <div class="background-image">
+                <img src="assets/logo-bg-4.png" alt="#">
+              </div>
+              <div class="hero-content hero-modal">
+                <div class="container width-size">
+                  <div class="col-md-7 col-sm-8 col-xs-10 m-auto white">
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane melon-tab show active" id="pills-melon" role="tabpanel" aria-labelledby="pills-melon-tab">
+                        <img src="assets/melon-logo.png">
+                        <p class="content-tab">Melon ([méllō], μέλλω; Greek for "destined to be") is blockchain software that seeks to enable participants to set up, manage and invest in technology regulated digital asset funds.</p>
+                        <a class="btn btn-primary" href="https://melon.network/" target="_blank">GET STARTED</a>
+                      </div>
+                      <div class="tab-pane melon-tab" id="pills-m0" role="tabpanel" aria-labelledby="pills-m0-tab">
+                        <img src="assets/m0-logo.png">
+                        <p class="content-tab">M-0 provides an excellent opportunity to meet with pioneering groups and individuals who are working on game-changing technologies that will change the asset management world we know today.</p>
+                        <a class="btn btn-primary" href="https://m-0.melonport.com/" target="_blank">GET STARTED</a>
+                      </div>
+                      <div class="tab-pane melon-tab" id="pills-oyente" role="tabpanel" aria-labelledby="pills-oyente-tab">
+                        <img src="assets/oyente-logo.png">
+                        <p class="content-tab">An Analysis Tool for Smart Contracts</p>
+                        <a class="btn btn-primary" href="https://oyente.melon.network/" target="_blank">GET STARTED</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-        </section>
-        <!-- -->
+            </section>
+          </div>
+          <!-- <div class="modal-footer">
+            <nav class="nav nav-pills nav-justified">
+              <a class="nav-item nav-link active" id="pills-melon-tab" data-toggle="pill" href="#pills-melon" role="tab" aria-controls="pills-melon" aria-expanded="true">MELON</a>
+              <a class="nav-item nav-link" id="pills-m0-tab" data-toggle="pill" href="#pills-m0" role="tab" aria-controls="pills-m0" aria-expanded="true">M-0</a>
+              <a class="nav-item nav-link" id="pills-oyente-tab" data-toggle="pill" href="#pills-oyente" role="tab" aria-controls="pills-oyente" aria-expanded="true">OYENTE</a>
+            </nav>
+          </div> -->
+        </div>
+      </div>
+    </div>
 
-        <!-- NAVIGATION -->
-        <nav class="navbar sticky transparent-white">
-            <div class="container fluid-container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <ul class="ul-h nav-menu nav-menu-left">
-                            <li>
-                              <a href="https://gitter.im/melonproject/general" target="_blank">
-                                <div class="gitter-logo">
-                                  <img src="img/gitter-logo.png">
-                                </div>
-                                <div class="gitter-text">
-                                  <span class="gitter">Join Us</span>
-                                  <span class="gitter">on <b>GITTER</b></span>
-                                </div>
-                              </a>
-                            </li>
-                        </ul>
+    <!-- M0 Modal -->
+    <div class="modal fade" id="M0Modal" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog melon-modal" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">&nbsp;</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <svg class="icon" width="20" height="20"><use xlink:href="#close" /></svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <section id="hero" class="modal-content-body bg-white">
+              <div class="background-image">
+                <img src="assets/logo-bg-4.png" alt="#">
+              </div>
+              <div class="hero-content hero-modal">
+                <div class="container width-size">
+                  <div class="col-md-7 col-sm-8 col-xs-10 m-auto white">
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane melon-tab" id="pills-melon-02" role="tabpanel" aria-labelledby="pills-melon-tab">
+                        <img src="assets/melon-logo.png">
+                        <p class="content-tab">Melon ([méllō], μέλλω; Greek for "destined to be") is blockchain software that seeks to enable participants to set up, manage and invest in technology regulated digital asset funds.</p>
+                        <a class="btn btn-primary" href="https://melon.network/" target="_blank">GET STARTED</a>
+                      </div>
+                      <div class="tab-pane melon-tab show active" id="pills-m0-02" role="tabpanel" aria-labelledby="pills-m0-tab">
+                        <img src="assets/m0-logo.png">
+                        <p class="content-tab">M-0 provides an excellent opportunity to meet with pioneering groups and individuals who are working on game-changing technologies that will change the asset management world we know today.</p>
+                        <a class="btn btn-primary" href="https://m-0.melonport.com/" target="_blank">GET STARTED</a>
+                      </div>
+                      <div class="tab-pane melon-tab" id="pills-oyente-02" role="tabpanel" aria-labelledby="pills-oyente-tab">
+                        <img src="assets/oyente-logo.png">
+                        <p class="content-tab">An Analysis Tool for Smart Contracts</p>
+                        <a class="btn btn-primary" href="https://oyente.melon.network/" target="_blank">GET STARTED</a>
+                      </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 menu-bottom">
-                        <ul class="ul-h nav-menu nav-menu-center">
-                          <li><a href="https://melon.network" target="_blank" title="Blockchain Software for Asset Management">Melon</a></li>
-                          <li><a href="https://m-0.melonport.com" target="_blank" title="Upcoming Blockchain Conference for Asset Management">M-0</a></li>
-                          <li><a href="https://oyente.melon.network" target="_blank" title="Analysis Tool for Smart Contracts">Oyente</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 menu-bottom">
-                        <ul class="ul-h nav-menu nav-menu-right">
-                            <li><a href="http://eepurl.com/coytPH" target="_blank">Subscribe</a></li>
-                            <li><a href="https://medium.com/melonport-blog" target="_blank">Blog</a></li>
-                            <li><a href="https://github.com/melonproject" target="_blank">Github</a></li>
-                            <li><a href="https://twitter.com/melonport" target="_blank">Twitter</a></li>
-                            <li><a href="mailto:team@melonport.com?Subject=#HelloMelonport" target="_top">Contact</a></li>
-                        </ul>
-                    </div>
+                  </div>
                 </div>
-            </div>
-        </nav>
-        <!-- -->
+              </div>
+            </section>
+          </div>
+          <!-- <div class="modal-footer">
+            <nav class="nav nav-pills nav-justified">
+              <a class="nav-item nav-link" id="pills-melon-tab-02" data-toggle="pill" href="#pills-melon-02" role="tab" aria-controls="pills-melon-02" aria-expanded="true">MELON</a>
+              <a class="nav-item nav-link active" id="pills-m0-tab-02" data-toggle="pill" href="#pills-m0-02" role="tab" aria-controls="pills-m0-02" aria-expanded="true">M-0</a>
+              <a class="nav-item nav-link" id="pills-oyente-tab-02" data-toggle="pill" href="#pills-oyente-02" role="tab" aria-controls="pills-oyente-02" aria-expanded="true">OYENTE</a>
+            </nav>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Oyente Modal -->
+    <div class="modal fade" id="OyenteModal" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog melon-modal" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">&nbsp;</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <svg class="icon" width="20" height="20"><use xlink:href="#close" /></svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <section id="hero" class="modal-content-body bg-white">
+              <div class="background-image">
+                <img src="assets/logo-bg-4.png" alt="#">
+              </div>
+              <div class="hero-content hero-modal">
+                <div class="container width-size">
+                  <div class="col-md-7 col-sm-8 col-xs-10 m-auto white">
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane melon-tab" id="pills-melon-03" role="tabpanel" aria-labelledby="pills-melon-tab">
+                        <img src="assets/melon-logo.png">
+                        <p class="content-tab">Melon ([méllō], μέλλω; Greek for "destined to be") is blockchain software that seeks to enable participants to set up, manage and invest in technology regulated digital asset funds.</p>
+                        <a class="btn btn-primary" href="https://melon.network/" target="_blank">GET STARTED</a>
+                      </div>
+                      <div class="tab-pane melon-tab" id="pills-m0-03" role="tabpanel" aria-labelledby="pills-m0-tab">
+                        <img src="assets/m0-logo.png">
+                        <p class="content-tab">M-0 provides an excellent opportunity to meet with pioneering groups and individuals who are working on game-changing technologies that will change the asset management world we know today.</p>
+                        <a class="btn btn-primary" href="https://m-0.melonport.com/" target="_blank">GET STARTED</a>
+                      </div>
+                      <div class="tab-pane melon-tab show active" id="pills-oyente-03" role="tabpanel" aria-labelledby="pills-oyente-tab">
+                        <img src="assets/oyente-logo.png">
+                        <p class="content-tab">An Analysis Tool for Smart Contracts</p>
+                        <a class="btn btn-primary" href="https://oyente.melon.network/" target="_blank">GET STARTED</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- <div class="modal-footer">
+            <nav class="nav nav-pills nav-justified">
+              <a class="nav-item nav-link" id="pills-melon-tab-03" data-toggle="pill" href="#pills-melon-03" role="tab" aria-controls="pills-melon-03" aria-expanded="true">MELON</a>
+              <a class="nav-item nav-link" id="pills-m0-tab-03" data-toggle="pill" href="#pills-m0-03" role="tab" aria-controls="pills-m0-03" aria-expanded="true">M-0</a>
+              <a class="nav-item nav-link active" id="pills-oyente-tab-03" data-toggle="pill" href="#pills-oyente-03" role="tab" aria-controls="pills-oyente-03" aria-expanded="true">OYENTE</a>
+            </nav>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Modal -->
+    <div class="modal fade" id="TeamModal" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog melon-modal" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">&nbsp;</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <svg class="icon" width="20" height="20"><use xlink:href="#close" /></svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <section id="hero" class="modal-team-body">
+              <div class="background-image">
+
+              </div>
+              <div class="hero-content hero-modal team-content">
+                <div class="container width-size">
+                  <div class="row">
+                    <div class="col">
+                      <h3 class="team-heading">MELONPORT TEAM</h3>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-10 m-auto white">
+                      <div class="row">
+                        <div class="col">
+                          <div class="media">
+                            <img class="d-flex align-self-center mr-3" src="assets/team/reto.png" alt="Reto Trinkler">
+                            <div class="media-body founder-body">
+                              <h5>Reto Trinkler</h5>
+                              <p>Chairman & Co-Founder</p>
+                            </div>
+                          </div>
+                          <div class="founder-bio">
+                            <p>Blockchain developer with background in mathematics from ETH Zurich. He started developing Ethereum smart contracts immediately after their launch in 2015. He worked as a smart-contract developer at Brainbot Technologies (which is building the high-speed Raiden Network) and is host of Zurich's Blockchain Hacklab. Before this Reto developed a profitable trading algorithm for sport betting exchanges in C++.</p>
+                          </div>
+                          <div class="founder-social">
+                            <nav class="nav">
+                              <a class="nav-link active" href="https://twitter.com/reto_trinkler" target="_blank"><img src="assets/social/twitter.png"></a>
+                              <a class="nav-link active" href="https://github.com/retotrinkler" target="_blank"><img src="assets/social/github.png"></a>
+                              <a class="nav-link active" href="https://ch.linkedin.com/in/reto-trinkler-170a78106/en" target="_blank"><img src="assets/social/linkedin.png"></a>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="media">
+                            <img class="d-flex align-self-center mr-3" src="assets/team/mona.png" alt="Mona El Isa">
+                            <div class="media-body founder-body">
+                              <h5>Mona El Isa</h5>
+                              <p>CEO & Co-Founder</p>
+                            </div>
+                          </div>
+                          <div class="founder-bio">
+                            <p>Former star-trader at Goldman Sachs, promoted to Vice President by the age of 26 and made the “top 30 under 30” list in Trader Magazine in 2008 and Forbes Magazine in 2011 after profitably trading the 2008 and 2011 crashes. Moved to Geneva-based macro fund Jabre Capital in 2011, before deciding in 2014 that the future of finance lay in blockchain technology. She studied Economics & Statistics at the University College London.</p>
+                          </div>
+                          <div class="founder-social">
+                            <nav class="nav">
+                              <a class="nav-link active" href="https://twitter.com/perham83" target="_blank"><img src="assets/social/twitter.png"></a>
+                              <a class="nav-link active" href="https://github.com/perhamgirl" target="_blank"><img src="assets/social/github.png"></a>
+                              <a class="nav-link active" href="https://ch.linkedin.com/in/mona-el-isa-3a653526" target="_blank"><img src="assets/social/linkedin.png"></a>
+                            </nav>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row teams">
+                        <div class="col">
+                          <div class="team-member">
+                            <img class="team-photo" src="assets/team/simon.png" alt="Simon Schmid">
+                            <div class="team-info">
+                              <h5>Simon Schmid</h5>
+                              <p>Head of Front-End Development</p>
+                            </div>
+                            <div class="team-social">
+                              <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://twitter.com/schmid_si" target="_blank"><img src="assets/social/twitter.png"></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://github.com/schmidsi" target="_blank"><img src="assets/social/github.png"></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://www.linkedin.com/in/simonschmidzh/" target="_blank"><img src="assets/social/linkedin.png"></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="team-member">
+                            <img class="team-photo" src="assets/team/ahmad.png" alt="Ahmad Syarif Afandi">
+                            <div class="team-info">
+                              <h5>Ahmad S. Afandi</h5>
+                              <p>Head of Design</p>
+                            </div>
+                            <div class="team-social">
+                              <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://twitter.com/peterdraw" target="_blank"><img src="assets/social/twitter.png"></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://github.com/peterdraw" target="_blank"><img src="assets/social/github.png"></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://id.linkedin.com/in/ahmad-syarif-afandi" target="_blank"><img src="assets/social/linkedin.png"></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="team-member">
+                            <img class="team-photo" src="assets/team/jenna.png" alt="Jenna Zenk">
+                            <div class="team-info">
+                              <h5>Jenna Zenk</h5>
+                              <p>Front-End Developer</p>
+                            </div>
+                            <div class="team-social">
+                              <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://twitter.com/jennaszenk" target="_blank"><img src="assets/social/twitter.png"></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://github.com/jennazenk" target="_blank"><img src="assets/social/github.png"></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://www.linkedin.com/in/jenna-zenk-72545266/" target="_blank"><img src="assets/social/linkedin.png"></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="team-member">
+                            <img class="team-photo" src="assets/team/travis.png" alt="Travis Jacobs">
+                            <div class="team-info">
+                              <h5>Travis Jacobs</h5>
+                              <p>Blockchain Developer</p>
+                            </div>
+                            <div class="team-social">
+                              <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://twitter.com/rai_coin" target="_blank"><img src="assets/social/twitter.png"></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://github.com/travs" target="_blank"><img src="assets/social/github.png"></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://www.linkedin.com/in/travjacobs/"><img src="assets/social/linkedin.png"></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row advisors">
+                    <div class="col">
+                      <h3 class="advisors-heading">OUR ADVISORS</h3>
+                    </div>
+                  </div>
+
+                  <div class="row advisors-content">
+                    <div class="col-md-11 m-auto white">
+                      <div class="row teams">
+                        <div class="col">
+                          <div class="team-member">
+                            <img class="team-photo" src="assets/team/gavin.png" alt="Dr Gavin Wood">
+                            <div class="team-info">
+                              <h5>Dr Gavin Wood</h5>
+                              <p>Technical Advisor</p>
+                            </div>
+                            <div class="team-social">
+                              <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://twitter.com/gavofyork" target="_blank"><img src="assets/social/twitter.png"></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://github.com/gavofyork" target="_blank"><img src="assets/social/github.png"></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://uk.linkedin.com/in/gavin-wood-88843316" target="_blank"><img src="assets/social/linkedin.png"></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="team-member">
+                            <img class="team-photo" src="assets/team/andreas.png" alt="Dr. Andreas Glarner">
+                            <div class="team-info">
+                              <h5>Dr. Andreas Glarner</h5>
+                              <p>Legal Advisor</p>
+                            </div>
+                            <div class="team-social">
+                              <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://twitter.com/mme_switzerland" target="_blank"><img src="assets/social/twitter.png"></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://www.linkedin.com/in/andreas-glarner-49b78b16" target="_blank"><img src="assets/social/linkedin.png"></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="team-member">
+                            <img class="team-photo" src="assets/team/jehan.png" alt="Jehan Chu">
+                            <div class="team-info">
+                              <h5>Jehan Chu</h5>
+                              <p>Strategic Advisor</p>
+                            </div>
+                            <div class="team-social">
+                              <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://twitter.com/collectionist" target="_blank"><img src="assets/social/twitter.png"></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="https://www.linkedin.com/in/jehan-chu-637101" target="_blank"><img src="assets/social/linkedin.png"></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-        <script src="js/jquery.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+    <!-- Default JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Script Modal-->
+    <script>
+      $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+      })
+    </script>
+
+    <!-- SVG Icons -->
+    <div hidden>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><symbol id="linkedin-logo-button" viewBox="0 0 49.652 49.652"><title>linkedin-logo-button</title><path d="M29.35,21.298c-2.125,0-3.074,1.168-3.605,1.988v-1.704h-4.002c0.052,1.128,0,12.041,0,12.041h4.002v-6.727 c0-0.359,0.023-0.72,0.131-0.977c0.29-0.72,0.948-1.465,2.054-1.465c1.448,0,2.027,1.104,2.027,2.724v6.442h4.002h0.001v-6.905 C33.958,23.019,31.983,21.298,29.35,21.298z M25.742,23.328h-0.025c0.008-0.014,0.02-0.027,0.025-0.041V23.328z"/><rect x="15.523" y="21.582" width="4.002" height="12.041"/><path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826 C49.652,11.137,38.516,0,24.826,0z M37.991,36.055c0,1.056-0.876,1.91-1.959,1.91H13.451c-1.08,0-1.957-0.854-1.957-1.91V13.211 c0-1.055,0.877-1.91,1.957-1.91h22.581c1.082,0,1.959,0.856,1.959,1.91V36.055z"/><path d="M17.551,15.777c-1.368,0-2.264,0.898-2.264,2.08c0,1.155,0.869,2.08,2.211,2.08h0.026c1.396,0,2.265-0.925,2.265-2.08 C19.762,16.676,18.921,15.777,17.551,15.777z"/></symbol><symbol id="close" viewBox="0 0 371.23 371.23"><title>close</title><polygon points="371.23,21.213 350.018,0 185.615,164.402 21.213,0 0,21.213 164.402,185.615 0,350.018 21.213,371.23 185.615,206.828 350.018,371.23 371.23,350.018 206.828,185.615 "/></symbol><symbol id="letter" viewBox="0 0 368.625 368.625"><title>letter</title><path style="fill:#ffffff; stroke:#ffffff;" d="M356.125,50.318H12.5c-6.903,0-12.5,5.597-12.5,12.5v242.988c0,6.902,5.597,12.5,12.5,12.5h343.625 c6.902,0,12.5-5.598,12.5-12.5V62.818C368.625,55.916,363.027,50.318,356.125,50.318z M343.625,293.307H25V75.318h318.625V293.307 z"/><path d="M57.755,134.201l120,73.937c2.01,1.239,4.283,1.858,6.557,1.858s4.547-0.619,6.557-1.858l120-73.937 c5.877-3.621,7.707-11.322,4.086-17.199s-11.324-7.707-17.199-4.085l-113.444,69.896L70.869,112.917 c-5.875-3.619-13.576-1.793-17.199,4.085C50.048,122.878,51.877,130.58,57.755,134.201z"/></symbol><symbol id="hashtag-symbol" viewBox="0 0 32 32"><title>hashtag-symbol</title><path style="fill:#868686;" d="M30,12V8h-5.004l1-8h-4l-1,8h-7.998l1-8h-4l-1,8H2v4h6.498L7.5,20H2v4h5l-1,8h4l1-8h8l-1.002,8H22 l1-8h7v-4h-6.5l0.996-8H30z M19.5,20h-8l0.998-8h7.998L19.5,20z"/></symbol><symbol id="clock-1" viewBox="0 0 357.102 357.102"><title>clock-1</title><path style="fill:#868686;" d="M192.349,13.8c-90.484,0-164.387,73.614-164.741,164.096l-0.007,1.74c0,3.442-2.359,5.117-7.013,5.117H5.91 c-2.831,0-4.688,0.974-5.517,2.756c-1.241,2.666,0.784,5.613,1.616,6.64l39.939,63.027l0.243,0.331 c1.074,1.224,2.489,1.929,3.882,1.929c1.134,0,2.782-0.437,4.237-2.596l39.441-62.379c0.918-1.075,3.102-4.123,1.872-6.864 c-0.825-1.84-2.751-2.844-5.724-2.844H71.05c-4.432,0-6.998-1.062-6.998-6.853c0-70.426,57.554-127.686,128.297-127.686 c70.749,0,128.308,57.574,128.308,128.321c0,70.748-57.559,128.314-128.308,128.314c-18.913,0-37.12-4.01-54.114-11.928 c-2.433-1.134-5.018-1.707-7.684-1.707c-7.063,0-13.552,4.135-16.533,10.532c-4.241,9.11-0.283,19.972,8.823,24.214 c21.852,10.18,45.237,15.342,69.508,15.342c90.845,0,164.753-73.907,164.753-164.751C357.102,87.707,283.194,13.8,192.349,13.8z"/><path d="M186.553,98.752c-8.284,0-15,6.716-15,15v63c0,7.883,4.452,16.048,11.081,20.319l54.797,35.291 c2.513,1.619,5.326,2.392,8.108,2.392c4.929-0.001,9.757-2.428,12.624-6.88c4.486-6.965,2.477-16.247-4.488-20.732l-52.122-33.569 v-59.82C201.553,105.468,194.837,98.752,186.553,98.752z"/></symbol><symbol id="clock" viewBox="0 0 612 612"><title>clock</title><path d="M587.572,186.881c-32.266-75.225-87.096-129.934-162.949-162.285C386.711,8.427,346.992,0.168,305.497,0.168 c-41.488,0-80.914,8.181-118.784,24.428C111.488,56.861,56.415,111.535,24.092,186.881C7.895,224.629,0,264.176,0,305.664 c0,41.496,7.895,81.371,24.092,119.127c32.323,75.346,87.403,130.348,162.621,162.621c37.877,16.247,77.295,24.42,118.784,24.42 c41.489,0,81.214-8.259,119.12-24.42c75.853-32.352,130.683-87.403,162.956-162.621C603.819,386.914,612,347.16,612,305.664 C612,264.176,603.826,224.757,587.572,186.881z M538.724,440.853c-24.021,41.195-56.929,73.876-98.375,98.039 c-41.195,24.021-86.332,36.135-134.845,36.135c-36.47,0-71.27-7.024-104.4-21.415c-33.129-14.384-61.733-33.294-85.661-57.215 c-23.928-23.928-42.973-52.811-57.214-85.997c-14.199-33.065-21.08-68.258-21.08-104.735c0-48.52,11.921-93.428,35.807-134.509 c23.971-41.231,56.886-73.947,98.039-98.04c41.146-24.092,85.99-36.142,134.502-36.142c48.52,0,93.649,12.121,134.845,36.142 c41.446,24.164,74.283,56.879,98.375,98.039c24.092,41.153,36.135,85.99,36.135,134.509 C574.852,354.185,562.888,399.399,538.724,440.853z"/><path d="M324.906,302.988V129.659c0-10.372-9.037-18.738-19.41-18.738c-9.701,0-18.403,8.366-18.403,18.738v176.005 c0,0.336,0.671,1.678,0.671,2.678c-0.671,6.024,1.007,11.043,5.019,15.062l100.053,100.046c6.695,6.695,19.073,6.695,25.763,0 c7.694-7.695,7.188-18.86,0-26.099L324.906,302.988z"/></symbol><symbol id="twitter" viewBox="0 0 486.392 486.392"><title>twitter</title><path style="fill:#010002;" d="M243.196,0C108.891,0,0,108.891,0,243.196s108.891,243.196,243.196,243.196 s243.196-108.891,243.196-243.196C486.392,108.861,377.501,0,243.196,0z M364.186,188.598l0.182,7.752 c0,79.16-60.221,170.359-170.359,170.359c-33.804,0-65.268-9.91-91.776-26.904c4.682,0.547,9.454,0.851,14.288,0.851 c28.059,0,53.868-9.576,74.357-25.627c-26.204-0.486-48.305-17.814-55.935-41.586c3.678,0.699,7.387,1.034,11.278,1.034 c5.472,0,10.761-0.699,15.777-2.067c-27.39-5.533-48.031-29.7-48.031-58.701v-0.76c8.086,4.499,17.297,7.174,27.116,7.509 c-16.051-10.731-26.63-29.062-26.63-49.825c0-10.974,2.949-21.249,8.086-30.095c29.518,36.236,73.658,60.069,123.422,62.562 c-1.034-4.378-1.55-8.968-1.55-13.649c0-33.044,26.812-59.857,59.887-59.857c17.206,0,32.771,7.265,43.714,18.908 c13.619-2.706,26.448-7.691,38.03-14.531c-4.469,13.984-13.953,25.718-26.326,33.135c12.069-1.429,23.651-4.682,34.382-9.424 C386.073,169.659,375.889,180.208,364.186,188.598z"/></symbol><symbol id="github-logo" viewBox="0 0 438.549 438.549"><title>github-logo</title><path d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365 c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63 c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996 c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136 c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559 c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559 c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997 c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851 c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136 c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41 c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126 c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817 c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994 c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849 c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24 c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979 c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146 c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995 c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906 C438.536,184.851,428.728,148.168,409.132,114.573z"/></symbol></svg>
+    </div>
+
+  </body>
 </html>
