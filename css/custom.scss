@@ -39,6 +39,30 @@ body{
       padding-left: 3rem;
   }
 }
+@media (max-width: 330px) {
+  .company-slogan{
+    font-size: 34px!important;
+  }
+  .company-name{
+    font-size: 22px!important;
+  }
+}
+@media (max-width: 330px) {
+  .company-slogan{
+    font-size: 36px!important;
+  }
+  .company-name{
+    font-size: 25px!important;
+  }
+}
+@media (min-width: 329px) and (max-width: 469px) {
+  ul.melon-social li{
+    padding-left:7px !important;
+  }
+  ul.melon-social{
+    padding-left: 0px !important;
+  }
+}
 
 
 
