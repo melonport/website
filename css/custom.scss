@@ -49,6 +49,10 @@ body{
   .company-name{
     font-size: 22px!important;
   }
+  .subscribe-mail{
+    font-size: 12px;
+    padding: 0 !important;
+  }
 }
 @media (min-width: 329px) and (max-width: 469px) {
   .company-slogan{
@@ -56,6 +60,10 @@ body{
   }
   .company-name{
     font-size: 25px!important;
+  }
+  .subscribe-mail{
+    font-size: 12px;
+    padding: 0 !important;
   }
 }
 @media (min-width: 329px) and (max-width: 469px) {
@@ -72,6 +80,12 @@ body{
   }
   .company-name{
     font-size: 30px!important;
+  }
+}
+@media (min-width: 480px) and (max-width: 600px) {
+  .subscribe-mail{
+    font-size: 12px;
+    padding: 0 !important;
   }
 }
 
@@ -268,9 +282,12 @@ ul.melon-social{
 span.gitter{
   display: block;
 }
-
-
-
+.nav-link{
+  color: #252525;
+}
+.melon-social li a:hover{
+  color: #8E8E8E;
+}
 
 
 /* MODAL */
