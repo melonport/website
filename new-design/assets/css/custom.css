@@ -1301,3 +1301,15 @@ p.team-title{
     display: none;
   }
 }
+
+
+
+#mc_embed_signup h2{
+  color: #252525;
+}
+#mc_embed_signup .mc-field-group label{
+  color: #252525;
+}
+#mc_embed_signup .indicates-required{
+  color: red;
+}
