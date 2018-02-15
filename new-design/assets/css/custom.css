@@ -1316,6 +1316,8 @@ p.team-title{
 
 #mc_embed_signup h2{
   color: #252525;
+  font-size: 26px !important;
+  padding-bottom: 25px !important;
 }
 #mc_embed_signup .mc-field-group label{
   color: #252525;
@@ -1327,4 +1329,16 @@ p.team-title{
   padding-left:60px;
   padding-right:60px;
   margin-bottom:50px;
+}
+a.button-default:hover{
+  font-size: 20px !important;
+}
+.email-subscribe{
+  font-size: 16px;
+    padding: 10px;
+    font-weight: 400;
+    padding-left: 20px;
+    border-radius: 0px !important;
+    padding-right: 20px;
+    margin:0px !important;
 }
