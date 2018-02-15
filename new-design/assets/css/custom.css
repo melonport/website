@@ -527,15 +527,17 @@ p.icon-label{
 
 /*PULSE*/
 .pulse {
-  position: relative;
+  position: absolute;
   display: inline-block;
-  width: 300px;
-  height: 300px;
+  top: 189px;
+  z-index: -1;
+  left: 259px;
+  width: 260px;
+  height: 260px;
   border: none;
   box-shadow: 0 0 0 0 rgba(40, 40, 41, 0.7);
   border-radius: 50%;
   background-color: #fff;
-  background-image: url("../images/melon_protocol_2.svg");
   background-size:cover;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -543,6 +545,9 @@ p.icon-label{
   -moz-animation: pulse 1.7s infinite cubic-bezier(0.66, 0, 0, 1);
   -ms-animation: pulse 1.7s infinite cubic-bezier(0.66, 0, 0, 1);
   animation: pulse 1.7s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.image-pulse{
+  z-index: 9;
 }
 .pulse:hover
 {
@@ -1019,6 +1024,7 @@ p.team-title{
 
 
 /** MEDIA QUERIES  **/
+
 @media only screen and (max-width: 640px){
   .illustration {
     min-height: 0;
@@ -1033,7 +1039,7 @@ p.team-title{
     min-height: 920px;
   }
   .protocol-mobile{
-    padding-top: 70px !important;
+    padding-top: 150px !important;
   }
   .diagram-mobile{
     display: block !important;
@@ -1073,7 +1079,7 @@ p.team-title{
 
 @media only screen and (max-width: 1024px){
   .protocol-mobile{
-    padding-top: 190px !important;
+    padding-top: 190px;
   }
   a.button-default{
     padding: 0 20px !important;
@@ -1081,7 +1087,7 @@ p.team-title{
 }
 @media only screen and (max-width: 1280px){
   .protocol-mobile{
-    padding-top: 300px !important;
+    padding-top: 300px;
   }
 }
 @media only screen and (max-width: 480px){
@@ -1316,4 +1322,9 @@ p.team-title{
 }
 #mc_embed_signup .indicates-required{
   color: red;
+}
+.melon-projects{
+  padding-left:60px;
+  padding-right:60px;
+  margin-bottom:50px;
 }
