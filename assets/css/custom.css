@@ -870,7 +870,8 @@ p.team-title{
 }
 .team-bio{
   height: 165px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   display: block;
   margin-bottom: 40px !important;
 }
@@ -1110,7 +1111,11 @@ p.team-title{
     width: 60% !important;
   }
 }
-
+@media only screen and (min-width: 1920px){
+  img.melon-screen {
+    width: 80% !important;
+  }
+}
 
 
 
@@ -1176,7 +1181,8 @@ p.team-title{
   font-size: 14px;
   font-family: "source-serif-pro",serif;
   height: 100px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .timeline ol li div::before {
