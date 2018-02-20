@@ -919,6 +919,46 @@ p.team-title{
   margin-top: 70px;
   display: block;
 }
+.info-text{
+  background: #f8f8f8;
+  border: 1px solid #eee;
+  padding:40px;
+  border-radius:6px;
+  font-weight: 600;
+  margin-top: 20px;
+  display: block;
+}
+.info-text h6{
+  color: #252525;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.info-text p{
+  font-size: 16px;
+  font-style: italic;
+}
+.bug-title{
+  color: #252525;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.bug-content{
+  font-size: 18px;
+  font-weight: 400;
+  border-left: 3px solid #DBDBDB;
+  padding-left: 30px;
+}
+span.bold{
+  font-weight: 600;
+  color: #252525;
+  font-size: 18px !important;
+}
+a.info-link{
+  text-decoration: underline;
+  color: #252525;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 .ipfs-frontend{
   position: absolute;
   color: #fff;
@@ -1111,9 +1151,9 @@ p.team-title{
     width: 60% !important;
   }
 }
-@media only screen and (max-width: 1920px){
+@media only screen and (min-width: 1920px){
   img.melon-screen {
-    width: 80% !important;
+    width: 80%;
   }
 }
 
