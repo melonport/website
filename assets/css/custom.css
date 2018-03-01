@@ -53,14 +53,6 @@ a.button-default:hover:after{
 }
 
 
-
-
-
-
-
-
-
-
 /** NAVIGATION
 *******************************************************************/
 
@@ -942,7 +934,7 @@ p.team-title{
   margin-bottom: 30px;
 }
 .bug-content{
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   border-left: 3px solid #DBDBDB;
   padding-left: 30px;
