@@ -1415,3 +1415,10 @@ a.button-default:hover{
 {
 	background-color: #000000;
 }
+
+
+/* Additional CSS for Email form */
+#mc_embed_signup .mc-field-group input{
+  color: #000 !important;
+  font-weight: 400;
+}
