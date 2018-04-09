@@ -1422,3 +1422,29 @@ a.button-default:hover{
   color: #000 !important;
   font-weight: 400;
 }
+
+
+/* Floating Info*/
+#floating-info {
+    padding: 15px;
+    background: #0770cd;
+    box-shadow: 2px 4px 10px rgba(0,0,0,.3);
+    color: #fff;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    z-index: 99;
+    font-weight: 600;
+}
+#floating-info .icon {
+    color: #0770cd;
+    border-radius: 50%;
+    background: #fff;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+}
