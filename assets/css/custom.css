@@ -1436,14 +1436,15 @@ a.button-default:hover{
     border-radius: 50px;
     text-decoration: none;
     z-index: 99;
+    font-size: 22px;
     font-weight: 600;
 }
 #floating-info .icon {
     color: #0770cd;
     border-radius: 50%;
     background: #fff;
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     margin-right: 10px;
     display: inline-block;
     text-align: center;
