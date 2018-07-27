@@ -1233,6 +1233,9 @@ a.info-link {
 .timeline ol li div.present{
   background: #404040 !important;
 }
+.timeline ol li:nth-child(odd) div.present::before {
+  border-color: #404040 transparent transparent transparent;
+}
 
 .timeline ol li:nth-child(odd) div {
   top: -16px;
@@ -1253,6 +1256,9 @@ a.info-link {
   top: -8px;
   border-width: 8px 0 0 8px;
   border-color: transparent transparent transparent #202020;
+}
+.timeline ol li:nth-child(even) div.present::before {
+  border-color: transparent transparent transparent #404040;
 }
 
 .timeline time {
