@@ -257,7 +257,9 @@ p {
   font-weight: 400;
   color: #4a4a4a !important;
 }
-
+.documentation-link:hover{
+  text-decoration: underline;
+}
 a,
 a:hover,
 a:focus {
@@ -882,6 +884,17 @@ p.team-title {
   margin-top: 70px;
   display: block;
 }
+.highlighted-text-2 {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 6px;
+  font-size: 22px;
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 20px;
+  display: block;
+}
 .info-text {
   background: #f8f8f8;
   border: 1px solid #eee;
@@ -1217,6 +1230,9 @@ a.info-link {
   height: 0;
   border-style: solid;
 }
+.timeline ol li div.present{
+  background: #404040 !important;
+}
 
 .timeline ol li:nth-child(odd) div {
   top: -16px;
@@ -1366,6 +1382,21 @@ a.button-default:hover {
   border-radius: 0px !important;
   padding-right: 20px;
   margin: 0px !important;
+}
+
+/*---------- PARALLAX ----------*/
+.mel-parallax {
+    /* The image used */
+    background-image: url("../images/parallax-bg.jpg");
+
+    /* Set a specific height */
+    height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Scroll for Windows OS */
