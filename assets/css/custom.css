@@ -305,6 +305,26 @@ p.copyright {
   display: table;
   margin: 0 auto;
 }
+.announcement{
+  text-align: center;
+  padding-bottom: 35px !important;
+  margin-top: 0px !important;
+}
+.announcement p{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+.button-add{
+  color:#4a4a4a;
+  border:1px solid #4a4a4a;
+  padding: 8px 20px 8px 20px;
+  margin-bottom: 20px;
+}
+.button-add:hover{
+  background: #141414;
+}
 .screen {
   position: absolute;
   z-index: 9;
