@@ -309,18 +309,35 @@ p.copyright {
   text-align: center;
   padding-bottom: 35px !important;
   margin-top: 0px !important;
+  background: #f7f7f7 !important;
 }
-.announcement p{
+.announcement h4{
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 30px;
-  margin-top: 5px;
+  margin-top: 25px;
+  color: #4a4a4a;
+}
+.announcement p{
+  font-size: 16px;
+  margin-top: 40px;
+  color: #4a4a4a;
+  font-style: normal;
+  padding: 0px 35px 0px 35px;
 }
 .button-add{
   color:#4a4a4a;
   border:1px solid #4a4a4a;
   padding: 8px 20px 8px 20px;
   margin-bottom: 20px;
+}
+.para-link{
+  color: #4a4a4a;
+  font-weight: 600;
+}
+.para-link:hover{
+  color: #4a4a4a;
+  text-decoration: underline;
 }
 .button-add:hover{
   background: #141414;
