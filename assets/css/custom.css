@@ -1488,3 +1488,22 @@ a.button-default:hover {
   display: inline-block;
   text-align: center;
 }
+
+
+
+/* NEWS PAGE*/
+.newspage-item{
+    white-space: nowrap;
+    height: 130px;
+    text-align: center;
+    margin: 1em 0;
+}
+.helpernews {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.newspage-item a img{
+  vertical-align: middle;
+  display: inline-block;
+}
