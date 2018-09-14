@@ -388,7 +388,16 @@ p.copyright {
   left: 10%;
   top: 200px;
 }
-
+.small-text{
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  margin-top: -20px;
+  color: #9a9a9a;
+}
+.button-custom{
+  line-height: 40px !important;
+}
 .square {
   background-image: url("../images/base.svg");
   width: 350px;
