@@ -457,7 +457,7 @@ p.token-content {
 }
 .melon-fund {
   position: absolute;
-  left: 45%;
+  left: 43%;
   top: 38%;
 }
 .investors {
@@ -1558,4 +1558,16 @@ a.button-default:hover {
 .bold-text:hover{
   font-size: 15px;
   text-decoration: underline;
+}
+.censored-text-black{
+  color: #000;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+.censored-text-white{
+  color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
 }

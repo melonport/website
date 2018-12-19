@@ -70,13 +70,13 @@
 		<line class="st5" x1="676.5" y1="5.5" x2="676.5" y2="390.5"/>
 	</g>
 </g>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="303.25" y1="-975.7244" x2="303.25" y2="-652.7244" gradientTransform="matrix(1 0 0 -1 0 -652.7244)">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="303.25" y1="1131.6299" x2="303.25" y2="808.6299" gradientTransform="matrix(1 0 0 1 0 -808.6299)">
 	<stop  offset="0" style="stop-color:#171717"/>
 	<stop  offset="0.4996" style="stop-color:#212121"/>
 	<stop  offset="0.9996" style="stop-color:#171717"/>
 </linearGradient>
-<rect class="st7" width="606.5" height="323"/>
-<text transform="matrix(1 0 0 1 255.8989 53.9216)" class="st8 st9 st10">MLN Council</text>
+<rect y="0" class="st7" width="606.5" height="323"/>
+<text transform="matrix(1 0 0 1 230.5954 53.9216)" class="st8 st9 st10">waterMelon Council</text>
 <g>
 	<circle class="st11" cx="302.8" cy="131.8" r="47.4"/>
 	<circle class="st12" cx="302.8" cy="131.8" r="54.8"/>
@@ -125,10 +125,10 @@
 	</g>
 </g>
 <text transform="matrix(1 0 0 1 157.3145 252.0317)" class="st13 st14 st15">MTC</text>
-<text transform="matrix(1 0 0 1 142.4678 267.8862)" class="st8 st9 st16">MLN Technical</text>
+<text transform="matrix(1 0 0 1 126.8775 267.8862)" class="st8 st9 st16">waterMelon Technical</text>
 <text transform="matrix(1 0 0 1 158.1068 279.2862)" class="st8 st9 st16">Council</text>
 <text transform="matrix(1 0 0 1 412.3691 252.0317)" class="st13 st14 st15">MEB</text>
-<text transform="matrix(1 0 0 1 380.3218 267.8862)" class="st8 st9 st16">MLN Exposed Business</text>
+<text transform="matrix(1 0 0 1 363.8457 267.8862)" class="st8 st9 st16">waterMelon Exposed Business</text>
 <text transform="matrix(1 0 0 1 394.7482 279.2862)" class="st8 st9 st16">Representatives</text>
 <g>
 	<circle class="st12" cx="175.3" cy="186.6" r="38.5"/>
