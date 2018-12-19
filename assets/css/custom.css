@@ -1559,15 +1559,10 @@ a.button-default:hover {
   font-size: 15px;
   text-decoration: underline;
 }
-.censored-text-black{
-  color: #000;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #fff;
+.censored-text{
+  font-style: italic;
 }
-.censored-text-white{
-  color: #fff;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
+.censored-text-big{
+  font-style: italic;
+  font-size: 50px;
 }
