@@ -13,9 +13,9 @@
 	.st7{fill:url(#SVGID_1_);}
 	.st8{enable-background:new    ;}
 	.st9{fill:#878787;}
-	.st10{font-family:'SourceSerifPro-It';}
+	.st10{font-family:'SourceSerifPro-Light';}
 	.st11{font-size:16px;}
-	.st12{font-family:'SourceSerifPro-Light';}
+	.st12{font-family:'SourceSerifPro-Bold';}
 	.st13{fill:#2C2C2C;}
 	.st14{fill:none;stroke:#707070;stroke-miterlimit:10;}
 	.st15{fill:#FFFDF3;}
@@ -72,13 +72,13 @@
 		<line class="st5" x1="676.5" y1="5.5" x2="676.5" y2="390.5"/>
 	</g>
 </g>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="303.25" y1="1131.6299" x2="303.25" y2="808.6299" gradientTransform="matrix(1 0 0 1 0 -808.6299)">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="303.25" y1="-809.7244" x2="303.25" y2="-486.7244" gradientTransform="matrix(1 0 0 -1 0 -486.7244)">
 	<stop  offset="0" style="stop-color:#171717"/>
 	<stop  offset="0.4996" style="stop-color:#212121"/>
 	<stop  offset="0.9996" style="stop-color:#171717"/>
 </linearGradient>
 <rect y="0" class="st7" width="606.5" height="323"/>
-<text transform="matrix(1 0 0 1 231.7317 53.9216)" class="st8"><tspan x="0" y="0" class="st9 st10 st11">water</tspan><tspan x="38.2" y="0" class="st9 st12 st11">Melon Council</tspan></text>
+<text transform="matrix(1 0 0 1 230.0914 53.9216)" class="st8"><tspan x="0" y="0" class="st9 st10 st11">water</tspan><tspan x="40.1" y="0" class="st9 st12 st11">melon</tspan><tspan x="87" y="0" class="st9 st10 st11"> Council</tspan></text>
 <g>
 	<circle class="st13" cx="302.8" cy="131.8" r="47.4"/>
 	<circle class="st14" cx="302.8" cy="131.8" r="54.8"/>
@@ -127,11 +127,11 @@
 	</g>
 </g>
 <text transform="matrix(1 0 0 1 157.3145 252.0317)" class="st15 st16 st17">MTC</text>
-<text transform="matrix(1 0 0 1 120.2159 269.8862)" class="st8"><tspan x="0" y="0" class="st9 st10 st18">water</tspan><tspan x="26.3" y="0" class="st9 st12 st18">Melon Technical</tspan></text>
-<text transform="matrix(1 0 0 1 154.1087 286.1675)" class="st9 st12 st18">Council</text>
+<text transform="matrix(1 0 0 1 119.9597 269.8862)" class="st8"><tspan x="0" y="0" class="st9 st10 st18">water</tspan><tspan x="27.6" y="0" class="st9 st12 st18">melon</tspan><tspan x="59.8" y="0" class="st9 st10 st18"> Technical</tspan></text>
+<text transform="matrix(1 0 0 1 154.1087 286.1675)" class="st9 st10 st18">Council</text>
 <text transform="matrix(1 0 0 1 414.5641 252.0317)" class="st15 st16 st17">MEB</text>
-<text transform="matrix(1 0 0 1 356.6667 269.8862)" class="st8"><tspan x="0" y="0" class="st9 st10 st18">water</tspan><tspan x="26.3" y="0" class="st9 st12 st18">Melon Exposed Business</tspan></text>
-<text transform="matrix(1 0 0 1 391.4915 286.1675)" class="st9 st12 st18">Representatives</text>
+<text transform="matrix(1 0 0 1 355.8257 269.8862)" class="st8"><tspan x="0" y="0" class="st9 st10 st18">water</tspan><tspan x="27.6" y="0" class="st9 st12 st18">melon</tspan><tspan x="59.8" y="0" class="st9 st10 st18"> Exposed Business</tspan></text>
+<text transform="matrix(1 0 0 1 391.4915 286.1675)" class="st9 st10 st18">Representatives</text>
 <g>
 	<circle class="st14" cx="175.3" cy="186.6" r="38.5"/>
 	<g>
