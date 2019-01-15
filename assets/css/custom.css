@@ -1129,6 +1129,9 @@ a.info-link {
   .diagram-mobile {
     display: block !important;
   }
+  .diagram-mobile img{
+    width: 100%;
+  }
   .diagram-animated {
     display: none;
   }
